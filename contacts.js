@@ -45,6 +45,7 @@ router.post('/', async (req, res) => {
 
   if (!name || !email || !phone) {
     res.status(400).json({ message: 'Missing required fields' });
+    
     return;
   }
 
